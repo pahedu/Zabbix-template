@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2018-04-11T10:33:53Z</date>
+    <value_maps>
+        <value_map>
+            <name>Lync server: MCU Draining State</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Not requesting to drain</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Requesting to drain</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Draining</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Lync server: MCU Health State</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Normal</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Loaded</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Full</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Unavailable</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
