@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2018-04-18T09:25:35Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template App Windows DNS Server</template>
+            <name>Template App Windows DNS Server</name>
+            <description>This template assesses the status and overall health of services and performance of a Microsoft DNS server.</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>DNS Server</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Memory: Caching Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Caching Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>B</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of system memory in use by the DNS Server service for caching. &#13;
+Monitor this counter to determine whether cache use is optimizing the use of available memory</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Memory: Database Node Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Database Node Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>B</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of system memory in use by the DNS Server service for database nodes.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dynamic Update: NoOperation/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Dynamic Update NoOperation/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of No-operation/Empty dynamic update requests received by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dynamic Update: Received</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Dynamic Update Received&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of dynamic update requests received by the DNS server. Monitor this counter after enabling dynamic updates to determine whether DNS clients are attempting to update their DNS addresses.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dynamic Update: Rejected</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Dynamic Update Rejected&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of dynamic updates rejected by the DNS server. Monitor this counter and compare this value against Dynamic Update: Received to determine how many systems are experiencing problems updating DNS addresses.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dynamic Update: TimeOuts</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Dynamic Update TimeOuts&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of dynamic update time-outs of the DNS server.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dynamic Update: Written to Database</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Dynamic Update Written to Database&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of dynamic updates written to the database by the DNS server. Monitor this counter and compare this value against Dynamic Update: Received to determine how many systems are successfully updating DNS records.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Memory: Nbstat Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Nbstat Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>B</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of system memory in use by the DNS Server service for Nbtstat.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Memory: Record Flow Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Record Flow Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>B</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of system memory in use by the DNS Server service for record flow.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Recursive: Queries/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Recursive Queries/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of recursive queries received by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Recursive: Query Failure/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Recursive Query Failure/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of recursive query failures per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Recursive: TimeOut/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Recursive TimeOut/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of recursive query sending time-outs per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Secure Update: Failure</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Secure Update Failure&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of secure updates that failed on the DNS server. Monitor this counter to determine whether or not clients can perform secure dynamic updates. Also, compare this value against Secure Update: Received to determine how many systems fail to perform secure updates in DNS.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Secure Update: Received</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Secure Update Received&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of secure update requests received by the DNS server. Monitor this counter and compare this value against Secure Update: Failure to determine how many systems are successfully performing secure updates in DNS.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>TCP: Message Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\TCP Message Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of TCP message memory used by the DNS server.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>TCP: Query Received/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\TCP Query Received/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of TCP queries received by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>TCP: Response Sent/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\TCP Response Sent/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of TCP responses sent by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Total Query Received/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Total Query Received/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of queries received by the DNS server per second. Monitor this counter to create baselines of server usage in heavily trafficked networks.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Total Response Sent/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Total Response Sent/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of responses sent by the DNS server per second. Monitor this counter to create baselines of server usage in heavily trafficked networks.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>UDP: Message Memory</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\UDP Message Memory&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total amount of UDP message memory used by the DNS server.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>UDP: Query Received/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\UDP Query Received/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of UDP queries received by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>UDP: Response Sent/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\UDP Response Sent/sec&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the average number of UDP responses sent by the DNS server per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Zone Transfer: Failure</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Zone Transfer Failure&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of failed zone transfers of the master DNS server. Monitor this counter to troubleshoot name resolution failures.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Zone Transfer: Success</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\DNS\Zone Transfer Success&quot;]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor returns the total number of successful zone transfers of the master DNS server. Monitor this counter to troubleshoot name resolution failures.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Service: DNS Server</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>service.info[&quot;DNS Server&quot;, state]</key>
+                    <delay>300</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This component monitor enables DNS clients to resolve DNS names by answering DNS queries and dynamic DNS update requests. If this service is stopped or disabled, DNS updates will not occur and any services that explicitly depend on it will fail to start.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>DNS Server</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Windows service state</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template App Windows DNS Server:service.info[&quot;DNS Server&quot;, state].last()}&lt;&gt;0</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>DNS Server service stopped</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+    <value_maps>
+        <value_map>
+            <name>Windows service state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Running</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Paused</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Start pending</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Pause pending</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Continue pending</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Stop pending</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Stopped</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>Unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>255</value>
+                    <newvalue>No such service</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
