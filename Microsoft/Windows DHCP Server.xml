@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2018-04-17T15:01:17Z</date>
+    <date>2018-04-19T09:23:03Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -1000,7 +1000,7 @@ A sudden or abnormal increase in this value indicates heavy traffic on the serve
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template App Windows DHCP Server:eventlog[&quot;System&quot;,,,DHCP-Server,1063].logeventid(1063)}=1 and {Template App Windows DHCP Server:eventlog[&quot;System&quot;,,,DHCP-Server,1063].nodata(1063)}&lt;&gt;1</expression>
+            <expression>{Template App Windows DHCP Server:eventlog[&quot;System&quot;,,,DHCP-Server,1063].logeventid(1063)}=1 and {Template App Windows DHCP Server:eventlog[&quot;System&quot;,,,DHCP-Server,1063].nodata(60)}&lt;&gt;1</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>DHCP Server Scope is Full</name>
