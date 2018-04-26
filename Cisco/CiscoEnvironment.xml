@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2018-04-26T11:27:06Z</date>
+    <date>2018-04-26T13:42:43Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -152,7 +152,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=3</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=3 or {Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=4</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#FANSTATUSDESCR} fan on {HOST.NAME} have critical state</name>
@@ -168,23 +168,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=4</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>{#FANSTATUSDESCR} fan on {HOST.NAME} have shutdown  state</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>0</status>
-                            <priority>3</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=2</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=2 or {Template SNMP Cisco Environment:CiscoEnvMonFanState[{#SNMPINDEX}].last()}=6</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#FANSTATUSDESCR} fan on {HOST.NAME} have warning state</name>
@@ -331,7 +315,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=3</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=3 or {Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=4</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#SUPPLYSTATUSDESCR} power supply on {HOST.NAME} have critical state</name>
@@ -347,23 +331,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=4</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>{#SUPPLYSTATUSDESCR} power supply on {HOST.NAME} have shutdown  state</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>0</status>
-                            <priority>3</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=2</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=2 or {Template SNMP Cisco Environment:CiscoEnvMonSupplyState[{#SNMPINDEX}].last()}=6</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#SUPPLYSTATUSDESCR} power supply on {HOST.NAME} have warning state</name>
@@ -552,7 +520,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=3</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=3 or {Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=4</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#TEMPSTATUSDESCR} temperature on {HOST.NAME} have critical state</name>
@@ -568,23 +536,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=4</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>{#TEMPSTATUSDESCR} temperature on {HOST.NAME} have shutdown state</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>0</status>
-                            <priority>3</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=2</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=2 or {Template SNMP Cisco Environment:CiscoEnvMonTemperatureState[{#SNMPINDEX}].last()}=6</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#TEMPSTATUSDESCR} temperature on {HOST.NAME} have warning state</name>
@@ -817,7 +769,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=3</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=3 or {Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=4</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#VOLTAGESTATUSDESCR} voltage on {HOST.NAME} have critical state</name>
@@ -833,23 +785,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=4</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>{#VOLTAGESTATUSDESCR} voltage on {HOST.NAME} have shutdown state</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>0</status>
-                            <priority>3</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=2</expression>
+                            <expression>{Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=2 or {Template SNMP Cisco Environment:CiscoEnvMonVoltageState[{#SNMPINDEX}].last()}=6</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>{#VOLTAGESTATUSDESCR} voltage on {HOST.NAME} have warning state</name>
